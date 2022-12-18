@@ -1,35 +1,31 @@
-// const data = 20;
+// writeFileSync()
 
-// console.log(data);
+const fs = require("fs");
+// fs.writeFileSync("hello.txt", "hello new file")
 
-// var x=  20;
+// console.log("hello",__dirname)
+// console.log("hello",__filename)
 
-// if(x==20){
-//   console.log("data is matched");
-// }else{
-//   console.log("data is not matched")
-// }
+// const fs = require("fs").writeFileSync;
+// fs("abc.txt","this is a single file writeFileSync")
 
-// for(var i=0; i<=10; i++){
-//   console.log(i)
-// }
+// appendFileSync()
 
-// const  arr = [2,3,5,4,6,8,4];
+// const fs = require("fs");
+// fs.appendFileSync("abc.txt", "this is a second file");
 
-// console.log(arr[1]);
+// Buffer "utf8"
+// const buf_data =  fs.readFileSync("abc.txt", "utf8");
+// console.log(buf_data)
 
+// Example => 1
+// const buf_data =  fs.readFileSync("abc.txt", "utf8");
+// console.log(buf_data)
 
-// Import File
+// Example => 2
+// const buf_data =  fs.readFileSync("abc.txt");
+// const buf_new_data = buf_data.toString()
 
-// const app= require ("./app");
+// console.log(buf_new_data)
 
-// console.log(app.x)
-
-
-const  arr = [2,3,5,4,6,8,4];
-
-const storedata = arr.filter((item)=>{
-  return item> 5
-})
-
-console.log(storedata)
+fs.renameSync("abc.txt","readwrite.txt")

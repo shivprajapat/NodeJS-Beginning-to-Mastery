@@ -1,0 +1,1 @@
+this is a single file writeFileSyncthis is a second file
